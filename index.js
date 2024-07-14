@@ -14,6 +14,10 @@ app.use(cors(corsOptions));
 
 const port = process.env.PORT || 5000;
 
+app.get("/",(req,res)=>{
+    res.send("hello working")
+})
+
 app.post('/convert', async (req, res) => {
     const videoUrl = req.body.url;
     if (!videoUrl) {
