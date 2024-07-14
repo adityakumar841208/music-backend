@@ -5,7 +5,13 @@ require('dotenv').config()
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+const corsOptions = {
+    origin: 'http://ytmuzic.netlify.app',  // Replace with your frontend URL
+    methods: ['POST'],  // Allow only POST requests
+    allowedHeaders: ['Content-Type'],  // Allow only Content-Type header
+};
+app.use(cors(corsOptions));
 
 const port = process.env.PORT || 5000;
 
