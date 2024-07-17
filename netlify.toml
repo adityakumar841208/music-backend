@@ -8,6 +8,6 @@
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
-  for = "/cpnvert"
+  for = "/convert"
     [headers.values]
     Access-Control-Allow-Origin = "*"
