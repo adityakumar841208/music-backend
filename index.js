@@ -8,7 +8,6 @@ app.use(express.json());
 app.use(cors({
   origin: 'https://ytmuzic.netlify.app'
 }));
-app.use(cors(corsOptions));
 
 const port = process.env.PORT || 5000;
 
