@@ -15,12 +15,6 @@ app.get("/",(req,res)=>{
     res.send("hello working")
 })
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
-});
-
 
 app.post('/convert', async (req, res) => {
     const videoUrl = req.body.url;
