@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: 'https://ytmuzic.netlify.app', // Allow only this origin
+  origin: '*', // Allow only this origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type'],
   credentials: true // Allow cookies to be sent
