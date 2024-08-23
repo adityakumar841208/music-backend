@@ -24,6 +24,8 @@ app.get("/",(req,res)=>{
 
 app.post('/convert', async (req, res) => {
     const videoUrl = req.body.url;
+    console.log(videoUrl);
+  
     if (!videoUrl) {
         return res.status(400).json({ error: 'URL is required' });
     }
